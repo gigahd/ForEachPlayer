@@ -1,7 +1,9 @@
 [package]
 name = "giga/foreachplayer"
+license = "MIT"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = ["tests", "test.project.json", "sourcemap.json", "moonwave.toml", "rokit.toml", "selene.toml", "stylua.toml", "build"]
 
 [dependencies]

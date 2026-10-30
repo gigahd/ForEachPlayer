@@ -1,5 +1,19 @@
 local Players = game:GetService("Players")
 const RunService = game:GetService("RunService")
+
+--[=[
+    Runs callbacks for every player, present and future.
+
+    `onPlayerAdded` is called for each player already in the game, then for each
+    player that joins.
+
+    `onPlayerRemoving` is called with the player and their `Enum.PlayerExitReason`
+    when they leave. On the server, it is also called for each remaining player
+    with the `Enum.CloseReason` when the game closes, and shutdown waits for those
+    calls to finish.
+
+    Returns a function that stops all future callbacks.
+]=]
 return function(
     onPlayerAdded: ((player: Player) -> ())?,
     onPlayerRemoving: ((player: Player, reason: Enum.PlayerExitReason | Enum.CloseReason) -> ())?
