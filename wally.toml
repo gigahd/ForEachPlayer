@@ -1,5 +1,5 @@
 [package]
-name = "giga/foreachplayer"
+name = "gigahd/foreachplayer"
 license = "MIT"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
